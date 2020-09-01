@@ -182,8 +182,13 @@
             /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
         /*Main*/
 
-        /*Footer*/
-            /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
-        /*Footer*/
+        /*-------------------------Footer-------------------------------*/
+            
+        .main-footer{
+          background:#990066;
+          color: blanchedalmond;
+
+        }
+
 
     }

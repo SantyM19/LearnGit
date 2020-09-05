@@ -1,346 +1,296 @@
 /*Variables*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  text-decoration:none;
+  text-decoration: none;
 }
 :root {
-    --color: #ff7d97;
-  }
-  
-  body{
-    width: 100%;
-    margin: 0px;
-    display: block;
-    position: relative;
-    color: var(--color);
-  }
-  
-  /*Header*/
-  header {
-      font-family: 'IBM Plex Sans', sans-serif;
-      display: block;
-      position: sticky;
-      top: 0;
-      background-color: white;
-      width: 100%;
-    }
-    
-    .head{ 
-      display: inline-block;
-      padding: 1% 4%;
-    }
-    
-    .logo{
-      width: 30px;
-      height: 30px;
-    }
-  
-    .menui {
-      float: right;
-      position: relative;
-      right: 4%;
-      top: 22px;
-      transform: translate(-50%, -50%);
-      cursor: pointer;
-      transition: 0.5s ease;
-      height: 30px;
-    }
-    .menui:hover .bar {
-      box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
-    }
-    .menui .bar {
-      width: 30px;
-      height: 6px;
-      background: black;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-      border-radius: 2px;
-      transition: 0.4s ease;
-    }
-    .menui .bar:not(:first-child) {
-      margin-top: 3px;
-    }
-    
-    /*Burguer Menu*/
-  
-    #hi {
-      display: none;
-    }
-  
-    header nav {
-      display: none;
-    }
-  
-    #hi:checked + .menui {
-      transform: translate(-50%, -50%) rotatey(180deg);
-    }
-    #hi:checked + .menui .bar {
-      transform: rotatey(180deg) rotatex(360deg);
-    }
-    #hi:checked + .menui .bar:first-child {
-      transform: rotate(-45deg);
-      margin-top: 10px;
-    }
-    #hi:checked + .menui .bar:nth-child(2) {
-      opacity: 0;
-    }
-    #hi:checked + .menui .bar:nth-child(3) {
-      margin-top: -15px;
-      transform: rotate(45deg);
-    }
-  
-    header input:checked ~ nav {
-      display: block;
-    }
-     
-   
-    /*End BurguerMenu*/
-    .item{
-        color: black;
-        text-align: center;
-        width: 100%;
-        background-color: var(--color);
-      }
-      
-      .a {
-        display: block;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        padding:1% 0%;
-      }
-      
-      .a:hover {
-        color: var(--color);
-        background-color: white;
-        text-decoration: line-through;
-      }
-      
-      .a:active {
-        color:gray;
-        text-decoration: line-through;
-      }
-    
-      img{
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
-    /*Main*/
-            /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
-    /*Main*/
-/*-------------------------Footer-------------------------------*/
-    footer{
-      width: 100%;
-      background:#202020;
-      color:white;
-      max-width: 1650px;
-      margin:auto;
-      padding:40px;
-    }
-    .contenedor{
-      display: flex;
-      justify-content: space-between;
-      
-    }
-    .column--informacion{
-      max-width: 400px;
-    }
-    .column--informacion h1{
-      font-size: 22px;
-      color: #ff7d97;
-    }
-    .column--informacion p{
-      font-size: 14px;
-      
-      margin-top:20px;
-    }
-    .column--redes{
-      font-size: 22px;
-    }
-    .column--redes{
-      max-width: 400px;
-
-    }
-    
-    .column--redes h1{
-      font-size: 22px;
-      color: #ff7d97;
-    }
-    .column--redes .row{
-      margin-top: 20px;
-      display: flex;
-    }
-    .row img{
-      width: 36px;
-      height: 36px;
-    }
-    .column--redes a{
-      font-size: 14px;
-      margin-top: 10px;
-      margin-left: 20px;
-      color: #c7c7c7; 
-    }
-    .column--contactos{
-      max-width: 400px;
-    }
-    .column--contactos h1{
-      font-size: 22px;
-      color: #ff7d97;
-    }
-    .row2{
-      margin-top:20px;
-      display:flex;
-    }
-    .row2 img{
-      width: 36px;
-      height: 36px;
-    }
-    .row2 p{
-      margin-top:10px;
-      margin-left: 20px;
-      max-width: 140px;
-    }
-
-    div [class*="bloque"]{
-      min-height: 200px;
-      flex:40%;
-    }
-    /* Bloques*/
-    
-    .bloque1 {
-      color: #ff7d97;
-      /*background-color: #fdf9f9;*/
-      font-size: 15px;
-      order: 1;
-      width: 150px;
-      height: 80px
-      ;
-    }
-    .bloque1 h2{
-      text-align:center;
-    }
-    
-    .bloque2 {
-      color: #333;
-      text-align:center;
-      order: 2;
-    }
-    .Imagen1 {
-        width: 80%;
-    }
-    
-    .bloque3 {
-      color: #333;
-      text-align:center;
-      order: 3;
-    }
-    .bloque3 h2 {
-      font-size: 40px;
-      color: #ff7d97;
-    }
-    .Imagen2{
-      width:625px;
-      height: 800px;  
-    }
-    .bloque4 {
-      color: #333;
-      text-align:center;
-      order: 4;
-    }
-    .bloque4 h2 {
-      font-size: 40px;
-      color: #ff7d97;
-    }
-    .Imagen3{
-      width:700px;
-      height: 800px; 
-    }
-    
-    .contenedor{
-      display: flex;
-      flex-flow: row wrap;
-    }
-    /*Footer*/
-           /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
-    /*Footer*/
->>>>>>> a1e88414d8651f6a2a9a7d0f04d06668ce95bfa8
-
-/*----------------    For Desktop     -----------------------------------------------*/
-@media screen and (max-width:715px){
-  .contenedor{
-    flex-wrap: wrap;
-  }
-
+  --color: #ff7d97; 
 }
 
-    @media screen and (max-width: 901px) {
-        
-        /*Header*/
-  
-        header {
-          width: 100%;
-          display: block;
-        }
-        .head{
-          width: 45%;
-          padding-left: 5%;
-          display: inline-block;
-          vertical-align: middle;
-        }
-      
-        header input:checked ~ nav {
-          display: inline-block;
-        }
-      
-        input{
-          display: none;
-        }
-        .bar {
-          display: none;
-        }
-        header nav{
-          display: inline-block;
-          width: 45%;
-        }
-        .item{
-          width: 24%;
-          display: inline-block;
-          vertical-align: middle;
-          background-color: white;
-        }  
-        .a{
-          background-color: white;
-        }
-    
-        .a:hover {
-          background-color: white;
-        }
+body {
+  width: 100%;
+  margin: 0px;
+  display: block;
+  position: relative;
+  color: var(--color);
+}
 
-        /*End Header*/
+/*Header*/
+header {
+  font-family: "IBM Plex Sans", sans-serif;
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.head {
+  display: inline-block;
+  padding: 1% 4%;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.menui {
+  float: right;
+  position: relative;
+  right: 4%;
+  top: 22px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.5s ease;
+  height: 30px;
+}
+.menui:hover .bar {
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.menui .bar {
+  width: 30px;
+  height: 6px;
+  background: black;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+.menui .bar:not(:first-child) {
+  margin-top: 3px;
+}
+
+/*Burguer Menu*/
+
+#hi {
+  display: none;
+}
+
+header nav {
+  display: none;
+}
+
+#hi:checked + .menui {
+  transform: translate(-50%, -50%) rotatey(180deg);
+}
+#hi:checked + .menui .bar {
+  transform: rotatey(180deg) rotatex(360deg);
+}
+#hi:checked + .menui .bar:first-child {
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+#hi:checked + .menui .bar:nth-child(2) {
+  opacity: 0;
+}
+#hi:checked + .menui .bar:nth-child(3) {
+  margin-top: -15px;
+  transform: rotate(45deg);
+}
+
+header input:checked ~ nav {
+  display: block;
+}
+
+/*End BurguerMenu*/
+.item {
+  color: black;
+  text-align: center;
+  width: 100%;
+  background-color: var(--color);
+}
+
+.a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 1% 0%;
+}
+
+.a:hover {
+  color: var(--color);
+  background-color: white;
+  text-decoration: line-through;
+}
+
+.a:active {
+  color: gray;
+  text-decoration: line-through;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*Main*/
+
+/* Bloques*/
 
 
-        /*Main*/
-            /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
-        /*Main*/
-       /* -------------footer---------*/
-      .contenedor{
-         flex-wrap: wrap;
-       }
-       .column--redes
-       .column--contactos{
-         margin-top: 40px;
-       }
-       h1{
-         margin-top: 20px;
-       }
+h2{
+  text-align:center;
+}
+
+.bloque2 {
+  color: #333;
+  text-align:center;
+}
+
+.bloque3 {
+  color: #333;
+  text-align:center;
+}
+Main h2 {
+  font-size: 40px;
+  color: #ff7d97;
+}
+
+.bloque4 {
+  color: #333;
+  text-align:center;
+}
+
+/*Main*/
+
+/*Footer*/
+footer {
+  width: 100%;
+  background: #202020;
+  color: white;
+  max-width: 1650px;
+  margin: auto;
+  padding: 40px;
+}
+
+.contenedor1 {
+  flex-wrap: wrap;
+}
+.column--redes .column--contactos {
+  margin-top: 40px;
+}
+footer h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: var(--color);
+}
 
 
 
-      }
-            
-        
-       
+footer img {
+  width: 36px;
+  height: 36px;
+}
+
+
+.column--redes a {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #c7c7c7;
+}
+
+.column--redes .row {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 p {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+
+/*End Footer*/
+/*Medium Screen*/
+@media screen and (max-width: 715px) {
+  .contenedor1 {
+    flex-wrap: wrap;
+  }
+}
+/*Medium Screen*/
+
+/*----------------    For Desktop     -----------------------------------------------*/
+
+@media screen and (min-width: 901px) {
+  /*Header*/
+
+  header {
+    width: 100%;
+    display: block;
+  }
+  .head {
+    width: 45%;
+    padding-left: 5%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header input:checked ~ nav {
+    display: inline-block;
+  }
+
+  input {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+  header nav {
+    display: inline-block;
+    width: 45%;
+  }
+  .item {
+    width: 24%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+  }
+  .a {
+    background-color: white;
+  }
+
+  .a:hover {
+    background-color: white;
+  }
+
+  /*End Header*/
+
+  /*Main*/
+  /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
+  /*Main*/
+  /*-------------------------Footer-------------------------------*/
+  .contenedor1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column--informacion {
+    max-width: 400px;
+  }
+
+  .column--informacion p {
+    font-size: 14px;
+
+    margin-top: 20px;
+  }
+  .column--redes {
+    font-size: 22px;
+  }
+  .column--redes {
+    max-width: 400px;
+  }
+  .column--contactos {
+    max-width: 400px;
+  }
+}

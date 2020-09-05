@@ -129,7 +129,33 @@ img {
 }
 
 /*Main*/
-/*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
+
+/* Bloques*/
+
+
+h2{
+  text-align:center;
+}
+
+.bloque2 {
+  color: #333;
+  text-align:center;
+}
+
+.bloque3 {
+  color: #333;
+  text-align:center;
+}
+Main h2 {
+  font-size: 40px;
+  color: #ff7d97;
+}
+
+.bloque4 {
+  color: #333;
+  text-align:center;
+}
+
 /*Main*/
 
 /*Footer*/
@@ -185,10 +211,6 @@ footer img {
   max-width: 140px;
 }
 
-div [class*="bloque"] {
-  min-height: 200px;
-  flex: 40%;
-}
 
 /*End Footer*/
 /*Medium Screen*/

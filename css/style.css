@@ -132,6 +132,7 @@
     /*Main*/
             /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
     /*Main*/
+<<<<<<< HEAD
 /*-------------------------Footer-------------------------------*/
     footer{
       width: 100%;
@@ -205,8 +206,69 @@
       max-width: 140px;
     }
 
-
-
+    div [class*="bloque"]{
+      min-height: 200px;
+      flex:40%;
+    }
+    /* Bloques*/
+    
+    .bloque1 {
+      color: #ff7d97;
+      /*background-color: #fdf9f9;*/
+      font-size: 15px;
+      order: 1;
+      width: 150px;
+      height: 80px
+      ;
+    }
+    .bloque1 h2{
+      text-align:center;
+    }
+    
+    .bloque2 {
+      color: #333;
+      text-align:center;
+      order: 2;
+    }
+    .Imagen1 {
+        width: 80%;
+    }
+    
+    .bloque3 {
+      color: #333;
+      text-align:center;
+      order: 3;
+    }
+    .bloque3 h2 {
+      font-size: 40px;
+      color: #ff7d97;
+    }
+    .Imagen2{
+      width:625px;
+      height: 800px;  
+    }
+    .bloque4 {
+      color: #333;
+      text-align:center;
+      order: 4;
+    }
+    .bloque4 h2 {
+      font-size: 40px;
+      color: #ff7d97;
+    }
+    .Imagen3{
+      width:700px;
+      height: 800px; 
+    }
+    
+    .contenedor{
+      display: flex;
+      flex-flow: row wrap;
+    }
+    /*Footer*/
+           /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
+    /*Footer*/
+>>>>>>> a1e88414d8651f6a2a9a7d0f04d06668ce95bfa8
 
 /*----------------    For Desktop     -----------------------------------------------*/
 @media screen and (max-width:715px){

@@ -1,4 +1,11 @@
 /*Variables*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration:none;
+}
 :root {
     --color: #ff7d97;
   }
@@ -125,14 +132,91 @@
     /*Main*/
             /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
     /*Main*/
+/*-------------------------Footer-------------------------------*/
+    footer{
+      width: 100%;
+      background:#202020;
+      color:white;
+      max-width: 1600px;
+      margin:auto;
+      padding:40px;
+    }
+    .contenedor{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .column--informacion{
+      max-width: 400px;
+    }
+    .column--informacion h1{
+      font-size: 22px;
+      color: #ff7d97;
+    }
+    .column--informacion p{
+      font-size: 14px;
+      
+      margin-top:20px;
+    }
+    .column--redes{
+      font-size: 22px;
+    }
+    .column--redes{
+      max-width: 400px;
 
-    /*Footer*/
-           /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
-    /*Footer*/
+    }
+    
+    .column--redes h1{
+      font-size: 22px;
+      color: #ff7d97;
+    }
+    .column--redes .row{
+      margin-top: 20px;
+      display: flex;
+    }
+    .row img{
+      width: 36px;
+      height: 36px;
+    }
+    .column--redes a{
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #c7c7c7; 
+    }
+    .column--contactos{
+      max-width: 400px;
+    }
+    .column--contactos h1{
+      font-size: 22px;
+      color: #ff7d97;
+    }
+    .row2{
+      margin-top:20px;
+      display:flex;
+    }
+    .row2 img{
+      width: 36px;
+      height: 36px;
+    }
+    .row2 p{
+      margin-top:10px;
+      margin-left: 20px;
+      max-width: 140px;
+    }
+
+
+
 
 /*----------------    For Desktop     -----------------------------------------------*/
+@media screen and (max-width:715px){
+  .contenedor{
+    flex-wrap: wrap;
+  }
 
-    @media (min-width: 901px) {
+}
+
+    @media screen and (max-width: 901px) {
         
         /*Header*/
   
@@ -181,14 +265,21 @@
         /*Main*/
             /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
         /*Main*/
+       /* -------------footer---------*/
+      .contenedor{
+         flex-wrap: wrap;
+       }
+       .column--redes
+       .column--contactos{
+         margin-top: 40px;
+       }
+       h1{
+         margin-top: 20px;
+       }
 
-        /*-------------------------Footer-------------------------------*/
+
+
+      }
             
-        .main-footer{
-          background:#990066;
-          color: blanchedalmond;
-
-        }
-
-
-    }
+        
+       

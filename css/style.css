@@ -164,7 +164,7 @@
     }
     .Imagen2{
       width:625px;
-      height: 800px;  
+      height: 800px; 
     }
     .bloque4 {
       color: #333;
@@ -183,6 +183,12 @@
     .contenedor{
       display: flex;
       flex-flow: row wrap;
+    }
+    .Boton{
+      width:20%;
+      background: radial-gradient(circle,rgba(48,63,140,1)0%,rgba(240,4,71,1)94%,rgba(255,125,151,1)100%);
+      order: 4;
+      text-align:center;
     }
     /*Footer*/
            /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
@@ -233,15 +239,37 @@
           background-color: white;
         }
 
+      
         /*End Header*/
 
 
         /*Main*/
             /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
         /*Main*/
+        .Respon {
+          width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
 
+        .Imagen1 {
+          width: 80%;
+        }
+
+        .Imagen2{
+          width:625px;
+          height: 800px;  
+        }
+        .Imagen2{
+          width:625px;
+          height: 800px;  }    
+        .Boton{
+         background: radial-gradient(circle,rgba(48,63,140,1)0%,rgba(240,4,71,1)94%,rgba(255,125,151,1)100%);
+         text-align:center;
+         }
+         .Boton a {
+          width:20%;
+         }
         /*Footer*/
             /*MICHAEL DEBE CREAR EL FOOTER CON ICONOS DE REDES SOCIALES*/
         /*Footer*/
-
-    }

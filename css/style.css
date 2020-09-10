@@ -132,28 +132,54 @@ img {
 
 /* Bloques*/
 
+div [class*="bloque"]{
+  min-height: 200px;
+  flex:40%;
+}
+.contenedor{
+  flex-wrap: wrap;
+}
+
+.bloque1 p {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 300px;
+  order: 1;
+}
 
 h2{
   text-align:center;
+ color: #ff7d97;
+ font-size: 24px;
 }
 
 .bloque2 {
   color: #333;
   text-align:center;
+  margin-top: 20px;
+  order: 2;
 }
 
 .bloque3 {
   color: #333;
   text-align:center;
-}
-Main h2 {
-  font-size: 40px;
-  color: #ff7d97;
+  margin-top: 20px;
+  order: 3;
 }
 
 .bloque4 {
   color: #333;
   text-align:center;
+  order: 4;
+}
+
+.Boton {
+ background:radial-gradient(circle,rgba(48,63,140,1)0%,rgba(240,4,71,1)94%,rgba(255,125,151,1)100%);
+ text-align:center;
+ margin-top: 10px;
+ margin-left: 80px;
+ margin-right: 80px;
+ margin-bottom: 20px;
 }
 
 /*Main*/
@@ -269,6 +295,65 @@ footer img {
 
   /*Main*/
   /*PIPE Y FERCHO DEBEN TRABAJAR ESTA AREA*/
+ 
+  .bloque1 {
+    font-size: 20px;
+    order: 1;
+  }
+  .bloque1 p{
+    text-align:justify;
+    margin-left: 40px;
+  }
+  h2{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .bloque2 {
+    color: #333;
+  margin-right: 40px;
+  margin-left: 76px;
+  margin-top: 20px;
+  order: 2;
+  }
+  .Imagen1 {
+    width: 100%;
+  }
+  .bloque3 {
+    color: #333;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    order: 3;
+  }
+  .Imagen2{
+    width: 100%; 
+  }
+  .bloque4 {
+    color: #333;
+    margin-right: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+    order: 4;
+  }
+  .Imagen3{
+    width: 100%;
+  }
+  .contenedor{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .Boton {
+    background:radial-gradient(circle,rgba(48,63,140,1)0%,rgba(240,4,71,1)94%,rgba(255,125,151,1)100%);
+    font-size: 25px;
+    text-align:center;
+    margin-top: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+   }
+  
+  
   /*Main*/
   /*-------------------------Footer-------------------------------*/
   .contenedor1 {
